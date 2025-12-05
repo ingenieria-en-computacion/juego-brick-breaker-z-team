@@ -2,8 +2,8 @@
 #define LIBRARY_COMPAT_H
 
 #ifdef _WIN32
-   // #include <conio.h>
-    //#include <windows.h>
+   #include <conio.h>
+   #include <windows.h>
     static int kbhit_compat() {
         return kbhit();
     }
