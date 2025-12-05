@@ -35,7 +35,7 @@ void render_frame()
     }
     for (int x = 1; x <= 80; x++) {
         printf("\033[%d;%dH-", 1, x);   // Techo
-        // opcional: suelo (no es necesario dibujarlo en muchos casos)
+        // opcional: suelo (no es necesario )
         // printf("\033[%d;%dH-", 24, x);  
     }
 
