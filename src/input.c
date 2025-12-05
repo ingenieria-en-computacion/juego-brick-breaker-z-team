@@ -1,5 +1,5 @@
 #include "input.h"
-#include "library_compat.h"
+#include "library_compat.h" // para que pueda volver a funcionar
 /*
 int input_update() {
     // TODO:
