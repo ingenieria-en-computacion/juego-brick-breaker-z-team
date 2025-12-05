@@ -14,9 +14,7 @@ Ball* ball_get() {
     return &ball;
 }*/
 #include "ball.h"
-#include "paddle.h"
-#include "brick.h"
-#include "score.h"
+
 
 static Ball ball;   // pelota global
 
