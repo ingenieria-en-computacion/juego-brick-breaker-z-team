@@ -5,7 +5,7 @@
 #include "render.h"
 #include "input.h"
 #include "score.h"
-#include <stdio.h> //para coeras funciones
+#include <stdio.h> //para ciertas funciones
 
 /* Aquí pueden declararse variables globales del estado del juego.
 // Los estudiantes deben completar esto.
