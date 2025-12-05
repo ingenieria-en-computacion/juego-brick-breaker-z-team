@@ -66,5 +66,5 @@ void render_frame()
     printf("\033[1;2HScore: %d   Lives: %d", score_get(), lives);
 
     // 7. Pausar la ejecución por 50ms entre frames
-    Sleep(100);  // Pausa de 50 milisegundos
+    Sleep(150);  // Pausa de 150 milisegundos
 }
