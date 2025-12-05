@@ -15,23 +15,26 @@ void brick_destroy(int row, int col) {
     // TODO: Marcar un ladrillo como destruido
 }
 */
-#include "brick.h
+#include "brick.h"
 
-#define BRICK_ROWS 5
-#define BRICK_COLS 10
+// Matriz global de ladrillos
+static Brick bricks[BRICK_ROWS][BRICK_COLS];
 
-typedef struct {
-    int active;     // 1 si el ladrillo existe, 0 si está destruido
-} Brick;
+void bricks_init()
+{
+    // TODO: Inicializar todos los ladrillos como activos
+    for (int i = 0; i < BRICK_ROWS; i++)
+        for (int j = 0; j < BRICK_COLS; j++)
+            bricks[i][j].active = 1;
+}
 
-// Inicializa la matriz de ladrillos
-void bricks_init();
+Brick (*bricks_get()) [BRICK_COLS]
+{
+    return bricks;
+}
 
-// Devuelve un puntero a la matriz de ladrillos
-Brick (*bricks_get())[BRICK_COLS];
-
-// Marca un ladrillo como destruido
-void brick_destroy(int row, int col);
-
-
-
+void brick_destroy(int row, int col)
+{
+    // TODO: Marcar un ladrillo como destruido
+    bricks[row][col].active = 0;
+}
