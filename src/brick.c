@@ -33,9 +33,5 @@ Brick (*bricks_get())[BRICK_COLS];
 // Marca un ladrillo como destruido
 void brick_destroy(int row, int col);
 
-#endif
-
-
-#include "brick.h"
 
 
